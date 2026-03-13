@@ -1,90 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Safari Kenya Con Shakur</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#f5f5f5;
 }
+
+/* Header */
 
 header{
-background:#1b4332;
+background:#0a4d2c;
 color:white;
-padding:30px;
-text-align:center;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav{
-background:#081c15;
-padding:12px;
-text-align:center;
+header h1{
+margin:0;
+font-size:22px;
 }
+
+/* Navigation */
 
 nav a{
 color:white;
-margin:15px;
 text-decoration:none;
+margin-left:20px;
 font-weight:bold;
 }
 
+/* Hero */
+
 .hero{
-background:url('https://images.unsplash.com/photo-1516426122078-c23e76319801');
-background-size:cover;
-padding:120px 20px;
-text-align:center;
-color:white;
-}
-
-.hero h1{
-font-size:50px;
-}
-
-.section{
-padding:50px;
-text-align:center;
-}
-
-.packages{
+background:url("images/safari1.jpg") center/cover;
+height:400px;
 display:flex;
-flex-wrap:wrap;
+align-items:center;
 justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero h2{
+background:rgba(0,0,0,0.5);
+padding:15px;
+}
+
+/* Safari Cards */
+
+.tours{
+padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.card{
+.tour-card{
 background:white;
-padding:20px;
-width:260px;
-box-shadow:0px 0px 10px rgba(0,0,0,0.2);
-border-radius:8px;
+border-radius:6px;
+overflow:hidden;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
-.card img{
+.tour-card img{
 width:100%;
-border-radius:5px;
+height:180px;
+object-fit:cover;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
+.tour-card h3{
+padding:10px;
+margin:0;
 }
+
+.tour-card p{
+padding:0 10px 10px 10px;
+}
+
+.btn{
+display:block;
+background:#e67e22;
+color:white;
+text-align:center;
+padding:10px;
+text-decoration:none;
+margin:10px;
+border-radius:4px;
+}
+
+/* Footer */
 
 footer{
-background:#081c15;
+background:#222;
 color:white;
 text-align:center;
 padding:20px;
@@ -97,68 +113,61 @@ padding:20px;
 <body>
 
 <header>
-
 <h1>Safari Kenya Con Shakur</h1>
 
-<p>Your Trusted Kenya Safari Guide</p>
-
+<nav>
+<a href="index.html">Home</a>
+<a href="safari-packages.html">Safari Packages</a>
+<a href="about-shakur.html">About Shakur</a>
+</nav>
 </header>
 
-<nav>
+<section class="hero">
+<h2>Explore Kenya With Local Safari Guide</h2>
+</section>
 
-<a href="#">Home</a>
-<a href="#">Safari Packages</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
+<section class="tours">
 
-</nav>
+<!-- Safari 1 -->
 
-<div class="hero">
-
-<h1>Discover the Wild Beauty of Kenya</h1>
-
-<p>Masai Mara • Amboseli • Tsavo • Lamu</p>
-
+<div class="tour-card">
+<img src="images/mara.jpg">
+<h3>Masai Mara Safari</h3>
+<p>3 Day wildlife safari in the famous Masai Mara.</p>
+<a href="itinerary-mara.html" class="btn">View Itinerary</a>
 </div>
 
-<div class="section">
+<!-- Safari 2 -->
 
-<h2>Popular Safari Packages</h2>
-
-<div class="packages">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2">
-<h3>3 Days Masai Mara Safari</h3>
-<p>Experience the Big Five and the famous Masai Mara wildlife reserve.</p>
+<div class="tour-card">
+<img src="images/amboseli.jpg">
+<h3>Amboseli National Park</h3>
+<p>Elephants with Mt Kilimanjaro views.</p>
+<a href="itinerary-amboseli.html" class="btn">View Itinerary</a>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511207538754-e8555f2bc187">
-<h3>2 Days Tsavo East Safari</h3>
-<p>Explore the land of the red elephants and beautiful landscapes.</p>
+<!-- Safari 3 -->
+
+<div class="tour-card">
+<img src="images/lamu.jpg">
+<h3>Lamu Dhow Tour</h3>
+<p>Sunset dhow cruise and Swahili culture.</p>
+<a href="itinerary-lamu.html" class="btn">View Itinerary</a>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1564769625905-50e93615e769">
-<h3>Amboseli Safari</h3>
-<p>See elephants with the stunning Mount Kilimanjaro background.</p>
-</div>
+<!-- Add more safaris here -->
 
-</div>
-
-</div>
+</section>
 
 <footer>
 
-<p>Contact: +254 711 525 101</p>
+<p>Safari Kenya Con Shakur</p>
 
-<p>© 2026 Safari Kenya Con Shakur</p>
+<p>Phone / WhatsApp: 0711 525 101</p>
+
+<p>© 2026 All Rights Reserved</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/254711525101?text=Hello%20I%20would%20like%20to%20book%20a%20Safari">Chat on WhatsApp</a>
-
 </body>
-
 </html>
