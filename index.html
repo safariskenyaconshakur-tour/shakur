@@ -405,7 +405,23 @@ cursor:pointer;
 <button class="btn" onclick="openTsavoWest()">View Itinerary</button>
 
 </div>
+<div class="package-card">
 
+<img src="images/samburu.jpg" alt="Samburu Safari">
+
+<h3>🐆 3 Days Samburu Safari</h3>
+
+<p class="price">💰 From $520</p>
+
+<p class="days">📅 3 Days / 2 Nights</p>
+
+<button class="btn" onclick="openSamburu()">View Itinerary</button>
+
+</div>
+
+
+
+  
 </div>
     
 </section>
@@ -498,6 +514,26 @@ cursor:pointer;
 
 </div>
 
+<div id="samburuPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeSamburu()">&times;</span>
+
+<h2>🐆 3 Days Samburu Safari</h2>
+
+<h3>Day 1 – Nairobi to Samburu</h3>
+<p>Morning departure from Nairobi heading north to Samburu National Reserve. Arrive in time for lunch at your lodge followed by an afternoon game drive.</p>
+
+<h3>Day 2 – Full Day Safari</h3>
+<p>Explore Samburu famous for unique wildlife including Grevy's zebra, reticulated giraffe and the Somali ostrich. Enjoy morning and afternoon game drives along the Ewaso Nyiro River.</p>
+
+<h3>Day 3 – Morning Game Drive & Return</h3>
+<p>Early morning safari before breakfast. Later depart for Nairobi arriving in the afternoon.</p>
+
+</div>
+
+</div>
 
 <!-- Safari 2 -->
 
@@ -688,6 +724,17 @@ document.getElementById("tsavoWestPopup").style.display="flex";
 
 function closeTsavoWest(){
 document.getElementById("tsavoWestPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openSamburu(){
+document.getElementById("samburuPopup").style.display="flex";
+}
+
+function closeSamburu(){
+document.getElementById("samburuPopup").style.display="none";
 }
 
 </script>
