@@ -283,6 +283,31 @@ border-radius:5px;
 .btn:hover{
 background:#1da851;
 }
+  .popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:30px;
+width:80%;
+max-width:600px;
+border-radius:10px;
+}
+
+.close{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
 </style>
 
 </head>
@@ -355,6 +380,27 @@ background:#1da851;
 <h3>Masai Mara Safari</h3>
 <p>3 Day wildlife safari in the famous Masai Mara.</p>
 <a href="itinerary-mara.html" class="btn">View Itinerary</a>
+<a href="#" class="btn" onclick="openItinerary()">View Itinerary</a>
+</div>
+  <div id="itineraryPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeItinerary()">&times;</span>
+
+<h2>🐘 3 Days Masai Mara Safari</h2>
+
+<h3>Day 1 – Nairobi to Masai Mara</h3>
+<p>Pick up from your hotel in Nairobi and drive to Masai Mara. Enjoy scenic views of the Great Rift Valley. Arrive in time for lunch and afternoon game drive.</p>
+
+<h3>Day 2 – Full Day Safari</h3>
+<p>Spend the whole day exploring Masai Mara. Look for lions, elephants, cheetahs, giraffes and zebras. Picnic lunch inside the park.</p>
+
+<h3>Day 3 – Morning Safari & Return</h3>
+<p>Early morning game drive then breakfast at the lodge. Depart for Nairobi arriving in the afternoon.</p>
+
+</div>
+
 </div>
 
 <!-- Safari 2 -->
@@ -503,6 +549,16 @@ function googleTranslateElementInit() {
 </script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
 
+function openItinerary(){
+document.getElementById("itineraryPopup").style.display="flex";
+}
+
+function closeItinerary(){
+document.getElementById("itineraryPopup").style.display="none";
+}
+
+</script>
 </body>
 </html>
