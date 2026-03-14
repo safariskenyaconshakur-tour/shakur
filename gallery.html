@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Safari Photo Gallery | Safari Kenya Con Shakur</title>
 
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+h1{
+text-align:center;
+padding:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:6px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Safari Photo Gallery</h1>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg">
+<img src="images/photo2.jpg">
+<img src="images/photo3.jpg">
+<img src="images/photo4.jpg">
+<img src="images/photo5.jpg">
+<img src="images/photo6.jpg">
+<img src="images/photo7.jpg">
+<img src="images/photo8.jpg">
+<img src="images/photo9.jpg">
+<img src="images/photo10.jpg">
+
+</div>
+
+</body>
+</html>
