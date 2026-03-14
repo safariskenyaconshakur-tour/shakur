@@ -201,6 +201,25 @@ border-top:1px solid #444;
 padding-top:15px;
 font-size:14px;
 }
+  .language-switcher{
+position:absolute;
+top:15px;
+right:20px;
+}
+
+.language-switcher button{
+margin-left:5px;
+padding:5px 10px;
+border:none;
+background:#333;
+color:white;
+cursor:pointer;
+border-radius:4px;
+}
+
+.language-switcher button:hover{
+background:#25D366;
+}
 
 </style>
 
@@ -214,12 +233,17 @@ font-size:14px;
 </div>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="safari-packages.html">Safari Packages</a>
-<a href="About_Shakur.html">About Shakur</a>
-<a href="contact.html">Contact</a>
-<a href="gallery.html">Safari Gallery</a>
+<a id="home" href="index.html">Home</a>
+<a id="safari-packages" href="safari-packages.html">Safari Packages</a>
+<a id="about_shakur" href="About_Shakur.html">About Shakur</a>
+<a id="contact" href="contact.html">Contact</a>
+<a id="gallery" href="gallery.html">Safari Gallery</a>
 </nav>
+  <div class="language-switcher">
+<button onclick="setLanguage('en')">EN</button>
+<button onclick="setLanguage('it')">IT</button>
+<button onclick="setLanguage('fr')">FR</button>
+</div>
 </header>
 
 <div class="slideshow">
@@ -297,10 +321,10 @@ font-size:14px;
 <div class="footer-box">
 <h3>Quick Links</h3>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="gallery.html">Safari Gallery</a></li>
-<li><a href="contact.html">Contact Us</a></li>
-<li><a href="About_Shakur.html">About Shakur</a></li>
+<li><a id="home" href="index.html">Home</a></li>
+<li><a id="safari gallry" href="gallery.html">Safari Gallery</a></li>
+<li><a id="contact us" href="contact.html">Contact Us</a></li>
+<li><a id="about shakur" href="About_Shakur.html">About Shakur</a></li>
 </ul>
 </div>
 
@@ -345,6 +369,47 @@ font-size:14px;
    z-index: 1000;">
    💬 Chat on WhatsApp
 </a>
+  <script>
+
+const translations = {
+
+en:{
+home:"Home",
+gallery:"Safari Gallery",
+contact:"Contact Us",
+welcome:"Welcome to Safari Kenya Con Shakur",
+subtitle:"Experience unforgettable safari adventures in Kenya."
+},
+
+it:{
+home:"Home",
+gallery:"Galleria Safari",
+contact:"Contattaci",
+welcome:"Benvenuti a Safari Kenya Con Shakur",
+subtitle:"Vivi indimenticabili avventure safari in Kenya."
+},
+
+fr:{
+home:"Accueil",
+gallery:"Galerie Safari",
+contact:"Contactez-nous",
+welcome:"Bienvenue à Safari Kenya Con Shakur",
+subtitle:"Vivez des aventures safari inoubliables au Kenya."
+}
+
+};
+
+function setLanguage(lang){
+
+document.getElementById("home").innerText = translations[lang].home;
+document.getElementById("gallery").innerText = translations[lang].gallery;
+document.getElementById("contact").innerText = translations[lang].contact;
+document.getElementById("welcome").innerText = translations[lang].welcome;
+document.getElementById("subtitle").innerText = translations[lang].subtitle;
+
+}
+
+</script>
 
 </body>
 </html>
