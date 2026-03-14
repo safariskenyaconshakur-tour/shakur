@@ -392,6 +392,20 @@ cursor:pointer;
 <button class="btn" onclick="openTsavoEast()">View Itinerary</button>
 
 </div>
+  <div class="package-card">
+
+<img src="images/tsavo-west.jpg" alt="Tsavo West Safari">
+
+<h3>🌄 3 Days Tsavo West Safari</h3>
+
+<p class="price">💰 From $390</p>
+
+<p class="days">📅 3 Days / 2 Nights</p>
+
+<button class="btn" onclick="openTsavoWest()">View Itinerary</button>
+
+</div>
+
 </div>
     
 </section>
@@ -463,6 +477,27 @@ cursor:pointer;
 </div>
 
 </div>
+  <div id="tsavoWestPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeTsavoWest()">&times;</span>
+
+<h2>🌄 3 Days Tsavo West Safari</h2>
+
+<h3>Day 1 – Coast to Tsavo West</h3>
+<p>Early morning departure from Watamu or Malindi to Tsavo West National Park. Enter through Tsavo River Gate and enjoy game viewing en route to your lodge.</p>
+
+<h3>Day 2 – Explore Tsavo West</h3>
+<p>Full day safari exploring the park including Mzima Springs where hippos and crocodiles can be seen. Optional visit to Shetani Lava Flows.</p>
+
+<h3>Day 3 – Morning Safari & Return</h3>
+<p>Early morning game drive followed by breakfast. Depart for the coast arriving in the afternoon.</p>
+
+</div>
+
+</div>
+
 
 <!-- Safari 2 -->
 
@@ -642,6 +677,17 @@ document.getElementById("tsavoEastPopup").style.display="flex";
 
 function closeTsavoEast(){
 document.getElementById("tsavoEastPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openTsavoWest(){
+document.getElementById("tsavoWestPopup").style.display="flex";
+}
+
+function closeTsavoWest(){
+document.getElementById("tsavoWestPopup").style.display="none";
 }
 
 </script>
