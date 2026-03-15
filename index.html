@@ -470,6 +470,19 @@ cursor:pointer;
 <button class="btn" onclick="openMara4()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/amboseli-kilimanjaro.jpg" alt="Amboseli Kilimanjaro Safari">
+
+<h3>🦒 3 Days Amboseli Kilimanjaro Safari</h3>
+
+<p class="price">💰 From $480</p>
+
+<p class="days">📅 3 Days / 2 Nights</p>
+
+<button class="btn" onclick="openAmboseliKili()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -662,6 +675,26 @@ cursor:pointer;
 
 <h3>Day 4 – Return to Nairobi</h3>
 <p>Early morning safari followed by breakfast before departing back to Nairobi.</p>
+
+</div>
+
+</div>
+<div id="amboseliKiliPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeAmboseliKili()">&times;</span>
+
+<h2>🦒 3 Days Amboseli Kilimanjaro Safari</h2>
+
+<h3>Day 1 – Nairobi to Amboseli</h3>
+<p>Morning departure from Nairobi heading to Amboseli National Park. Arrive in time for lunch followed by an afternoon game drive.</p>
+
+<h3>Day 2 – Full Day Game Drive</h3>
+<p>Spend the day exploring Amboseli known for its large elephant herds and stunning views of Mount Kilimanjaro.</p>
+
+<h3>Day 3 – Morning Safari & Return</h3>
+<p>Early morning game drive with a chance to photograph elephants with Mount Kilimanjaro in the background before returning to Nairobi.</p>
 
 </div>
 
@@ -912,6 +945,17 @@ document.getElementById("mara4Popup").style.display="flex";
 
 function closeMara4(){
 document.getElementById("mara4Popup").style.display="none";
+}
+
+</script>
+<script>
+
+function openAmboseliKili(){
+document.getElementById("amboseliKiliPopup").style.display="flex";
+}
+
+function closeAmboseliKili(){
+document.getElementById("amboseliKiliPopup").style.display="none";
 }
 
 </script>
