@@ -418,6 +418,19 @@ cursor:pointer;
 <button class="btn" onclick="openSamburu()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/lake-nakuru.jpg" alt="Lake Nakuru Safari">
+
+<h3>🦩 2 Days Lake Nakuru Safari</h3>
+
+<p class="price">💰 From $320</p>
+
+<p class="days">📅 2 Days / 1 Night</p>
+
+<button class="btn" onclick="openNakuru()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -531,6 +544,24 @@ cursor:pointer;
 </div>
 
 </div>
+  <div id="nakuruPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeNakuru()">&times;</span>
+
+<h2>🦩 2 Days Lake Nakuru Safari</h2>
+
+<h3>Day 1 – Nairobi to Lake Nakuru</h3>
+<p>Morning departure from Nairobi heading through the Great Rift Valley with a scenic stop at the viewpoint. Arrive at Lake Nakuru National Park in time for lunch followed by an afternoon game drive.</p>
+
+<h3>Day 2 – Morning Safari & Return</h3>
+<p>Early morning game drive to see rhinos, flamingos, giraffes and lions. After breakfast depart for Nairobi arriving in the afternoon.</p>
+
+</div>
+
+</div>
+
 
 <!-- Safari 2 -->
 
@@ -732,6 +763,17 @@ document.getElementById("samburuPopup").style.display="flex";
 
 function closeSamburu(){
 document.getElementById("samburuPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openNakuru(){
+document.getElementById("nakuruPopup").style.display="flex";
+}
+
+function closeNakuru(){
+document.getElementById("nakuruPopup").style.display="none";
 }
 
 </script>
