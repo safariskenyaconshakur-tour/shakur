@@ -496,6 +496,19 @@ cursor:pointer;
 <button class="btn" onclick="openTsavoCombo()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/kenya-wildlife.jpg" alt="5 Days Kenya Wildlife Safari">
+
+<h3>🦓 5 Days Kenya Wildlife Safari</h3>
+
+<p class="price">💰 From $890</p>
+
+<p class="days">📅 5 Days / 4 Nights</p>
+
+<button class="btn" onclick="openKenyaWildlife()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -728,6 +741,32 @@ cursor:pointer;
 <p>Early morning game drive in Tsavo West followed by breakfast before returning to the coast.</p>
 
 </div>
+
+</div>
+
+</div>
+<div id="kenyaWildlifePopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeKenyaWildlife()">&times;</span>
+
+<h2>🦓 5 Days Kenya Wildlife Safari</h2>
+
+<h3>Day 1 – Nairobi to Masai Mara</h3>
+<p>Depart Nairobi in the morning driving through the Great Rift Valley. Arrive in Masai Mara for lunch followed by an afternoon game drive.</p>
+
+<h3>Day 2 – Full Day Masai Mara Safari</h3>
+<p>Explore Masai Mara searching for lions, elephants, cheetahs and other wildlife across the vast savannah.</p>
+
+<h3>Day 3 – Masai Mara to Lake Nakuru</h3>
+<p>Morning game drive before departing for Lake Nakuru National Park famous for flamingos and rhinos.</p>
+
+<h3>Day 4 – Lake Nakuru to Amboseli</h3>
+<p>Drive to Amboseli National Park located at the foot of Mount Kilimanjaro with excellent wildlife viewing.</p>
+
+<h3>Day 5 – Amboseli to Nairobi</h3>
+<p>Morning safari in Amboseli before returning to Nairobi in the afternoon.</p>
 
 </div>
 
@@ -1000,6 +1039,17 @@ document.getElementById("tsavoComboPopup").style.display="flex";
 
 function closeTsavoCombo(){
 document.getElementById("tsavoComboPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openKenyaWildlife(){
+document.getElementById("kenyaWildlifePopup").style.display="flex";
+}
+
+function closeKenyaWildlife(){
+document.getElementById("kenyaWildlifePopup").style.display="none";
 }
 
 </script>
