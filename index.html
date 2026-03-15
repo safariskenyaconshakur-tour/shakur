@@ -431,6 +431,19 @@ cursor:pointer;
 <button class="btn" onclick="openNakuru()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/lamu-dhow.jpg" alt="Lamu Dhow Sunset Tour">
+
+<h3>⛵ Lamu Dhow Sunset Tour</h3>
+
+<p class="price">💰 From $60</p>
+
+<p class="days">📅 Half Day Experience</p>
+
+<button class="btn" onclick="openLamu()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -557,6 +570,26 @@ cursor:pointer;
 
 <h3>Day 2 – Morning Safari & Return</h3>
 <p>Early morning game drive to see rhinos, flamingos, giraffes and lions. After breakfast depart for Nairobi arriving in the afternoon.</p>
+
+</div>
+
+</div>
+<div id="lamuPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeLamu()">&times;</span>
+
+<h2>⛵ Lamu Dhow Sunset Tour</h2>
+
+<h3>Afternoon Departure</h3>
+<p>Meet your guide at the Lamu seafront and board a traditional wooden dhow boat.</p>
+
+<h3>Sailing Experience</h3>
+<p>Sail through the Lamu archipelago enjoying beautiful ocean views, mangrove channels and traditional Swahili villages.</p>
+
+<h3>Sunset Moment</h3>
+<p>Relax on the dhow while watching the spectacular sunset over the Indian Ocean. Snacks and refreshments are served onboard.</p>
 
 </div>
 
@@ -774,6 +807,17 @@ document.getElementById("nakuruPopup").style.display="flex";
 
 function closeNakuru(){
 document.getElementById("nakuruPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openLamu(){
+document.getElementById("lamuPopup").style.display="flex";
+}
+
+function closeLamu(){
+document.getElementById("lamuPopup").style.display="none";
 }
 
 </script>
