@@ -483,6 +483,19 @@ cursor:pointer;
 <button class="btn" onclick="openAmboseliKili()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/tsavo-east-west.jpg" alt="Tsavo East West Safari">
+
+<h3>🐘 3 Days Tsavo East & Tsavo West Safari</h3>
+
+<p class="price">💰 From $460</p>
+
+<p class="days">📅 3 Days / 2 Nights</p>
+
+<button class="btn" onclick="openTsavoCombo()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -695,6 +708,26 @@ cursor:pointer;
 
 <h3>Day 3 – Morning Safari & Return</h3>
 <p>Early morning game drive with a chance to photograph elephants with Mount Kilimanjaro in the background before returning to Nairobi.</p>
+
+</div>
+<div id="tsavoComboPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeTsavoCombo()">&times;</span>
+
+<h2>🐘 3 Days Tsavo East & Tsavo West Safari</h2>
+
+<h3>Day 1 – Coast to Tsavo East</h3>
+<p>Early morning departure from Watamu or Malindi to Tsavo East National Park. Enter through Bachuma Gate and enjoy game drives while heading to your lodge.</p>
+
+<h3>Day 2 – Tsavo East to Tsavo West</h3>
+<p>Morning safari in Tsavo East before driving to Tsavo West National Park. Visit Mzima Springs and enjoy afternoon wildlife viewing.</p>
+
+<h3>Day 3 – Morning Safari & Return</h3>
+<p>Early morning game drive in Tsavo West followed by breakfast before returning to the coast.</p>
+
+</div>
 
 </div>
 
@@ -956,6 +989,17 @@ document.getElementById("amboseliKiliPopup").style.display="flex";
 
 function closeAmboseliKili(){
 document.getElementById("amboseliKiliPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openTsavoCombo(){
+document.getElementById("tsavoComboPopup").style.display="flex";
+}
+
+function closeTsavoCombo(){
+document.getElementById("tsavoComboPopup").style.display="none";
 }
 
 </script>
