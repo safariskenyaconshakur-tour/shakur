@@ -464,9 +464,6 @@ background:rgba(0,0,0,0.8);
 </div>
 <a class="prev" onclick="changeSlide(-1)">❮</a>
 <a class="next" onclick="changeSlide(1)">❯</a>
-<div class="slide-text">
-<h2>Explore Kenya With Safari Kenya Con Shakur</h2>
-</div>
 </div>
 
 <section class="safari-packages">
@@ -1097,14 +1094,15 @@ function closeKenyaWildlife(){
 document.getElementById("kenyaWildlifePopup").style.display="none";
 }
 </script>
-  
+
+
 <script>
 let slideIndex = 1;
-showSlide(slideIndex);
+showSlides(slideIndex);
 function changeSlide(n) {
-showSlide(slideIndex += n);
+showSlides(slideIndex += n);
 }
-function showSlide(n) {
+function showSlides(n) {
 let slides = document.getElementsByClassName("slide");
 if (n > slides.length) {slideIndex = 1}
 if (n < 1) {slideIndex = slides.length}
