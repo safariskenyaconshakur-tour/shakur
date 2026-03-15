@@ -457,6 +457,19 @@ cursor:pointer;
 <button class="btn" onclick="openWatamu()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/masai-mara-4days.jpg" alt="4 Days Masai Mara Safari">
+
+<h3>🐘 4 Days Masai Mara Safari</h3>
+
+<p class="price">💰 From $650</p>
+
+<p class="days">📅 4 Days / 3 Nights</p>
+
+<button class="btn" onclick="openMara4()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -626,6 +639,29 @@ cursor:pointer;
 
 <h3>Return to Hotel</h3>
 <p>After the marine excursion you return to the beach and transfer back to your hotel.</p>
+
+</div>
+
+</div>
+<div id="mara4Popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeMara4()">&times;</span>
+
+<h2>🐘 4 Days Masai Mara Safari</h2>
+
+<h3>Day 1 – Nairobi to Masai Mara</h3>
+<p>Morning departure from Nairobi driving through the Great Rift Valley. Arrive at Masai Mara in time for lunch followed by an afternoon game drive.</p>
+
+<h3>Day 2 – Full Day Safari</h3>
+<p>Spend the full day exploring Masai Mara searching for the Big Five including lions, elephants, buffalo, leopards and rhinos.</p>
+
+<h3>Day 3 – Morning and Afternoon Game Drives</h3>
+<p>Enjoy two game drives exploring deeper areas of the reserve and optional visit to a Maasai village.</p>
+
+<h3>Day 4 – Return to Nairobi</h3>
+<p>Early morning safari followed by breakfast before departing back to Nairobi.</p>
 
 </div>
 
@@ -865,6 +901,17 @@ document.getElementById("watamuPopup").style.display="flex";
 
 function closeWatamu(){
 document.getElementById("watamuPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openMara4(){
+document.getElementById("mara4Popup").style.display="flex";
+}
+
+function closeMara4(){
+document.getElementById("mara4Popup").style.display="none";
 }
 
 </script>
