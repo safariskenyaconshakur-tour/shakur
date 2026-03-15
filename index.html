@@ -322,6 +322,52 @@ font-weight:bold;
 .book-btn:hover{
 background:#1ebe5d;
 }
+  .slideshow-container{
+max-width:100%;
+position:relative;
+margin:auto;
+}
+
+.slide{
+display:none;
+}
+
+.slide img{
+height:500px;
+object-fit:cover;
+}
+
+/* fade animation */
+.fade{
+animation:fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect{
+from{opacity:0.4}
+to{opacity:1}
+}
+
+/* arrows */
+
+.prev, .next{
+cursor:pointer;
+position:absolute;
+top:50%;
+padding:16px;
+color:white;
+font-weight:bold;
+font-size:24px;
+background:rgba(0,0,0,0.5);
+user-select:none;
+}
+
+.next{
+right:0;
+}
+
+.prev:hover, .next:hover{
+background:rgba(0,0,0,0.8);
+}
 
 </style>
 
@@ -360,8 +406,46 @@ background:#1ebe5d;
 <div class="slide-text">
 <h2>Esplora il Kenya con Safari Kenya Con Shakur</h2>
 </div>
-
+<div class="slideshow-container">
+<div class="slide fade">
+<img src="images/safari1.jpg" style="width:100%">
 </div>
+<div class="slide fade">
+<img src="images/safari2.jpg" style="width:100%">
+</div>
+<div class="slide fade">
+<img src="images/safari3.jpg" style="width:100%">
+</div>
+<div class="slide fade">
+<img src="images/safari4.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari5.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari6.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari7.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari8.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari9.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari10.jpg" style="width:100%">
+</div>
+  <div class="slide fade">
+<img src="images/safari11.jpg" style="width:100%">
+</div>
+<a class="prev" onclick="changeSlide(-1)">❮</a>
+<a class="next" onclick="changeSlide(1)">❯</a>
+</div>
+</div>
+
+  
 <section class="safari-packages">
 <h2 class="section-title">Popular Safari Packages</h2>
 <div class="packages-container">
@@ -963,6 +1047,35 @@ function closeKenyaWildlife(){
 document.getElementById("kenyaWildlifePopup").style.display="none";
 }
 </script>
+<script>
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n){
+showSlides(slideIndex += n);
+}
+
+function showSlides(n){
+
+let slides = document.getElementsByClassName("slide");
+
+if(n > slides.length){slideIndex = 1}
+if(n < 1){slideIndex = slides.length}
+
+for(let i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+
+slides[slideIndex-1].style.display = "block";
+}
+
+/* automatic slideshow */
+
+setInterval(function(){
+changeSlide(1);
+},4000);
+
+</script>
 </body>
 </html>
