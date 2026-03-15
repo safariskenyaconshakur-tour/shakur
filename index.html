@@ -444,6 +444,19 @@ cursor:pointer;
 <button class="btn" onclick="openLamu()">View Itinerary</button>
 
 </div>
+<div class="package-card">
+
+<img src="images/watamu-marine.jpg" alt="Watamu Marine Park Tour">
+
+<h3>🐠 Watamu Marine Park Snorkeling</h3>
+
+<p class="price">💰 From $75</p>
+
+<p class="days">📅 Half Day Tour</p>
+
+<button class="btn" onclick="openWatamu()">View Itinerary</button>
+
+</div>
 
 </div>
     
@@ -590,6 +603,29 @@ cursor:pointer;
 
 <h3>Sunset Moment</h3>
 <p>Relax on the dhow while watching the spectacular sunset over the Indian Ocean. Snacks and refreshments are served onboard.</p>
+
+</div>
+
+</div>
+<div id="watamuPopup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closeWatamu()">&times;</span>
+
+<h2>🐠 Watamu Marine Park Snorkeling Tour</h2>
+
+<h3>Morning Departure</h3>
+<p>Pick up from your hotel in Watamu or Malindi and transfer to the marine park entrance.</p>
+
+<h3>Snorkeling Adventure</h3>
+<p>Board a local boat and explore the beautiful coral reefs of Watamu Marine Park. Enjoy snorkeling with colorful tropical fish.</p>
+
+<h3>Dolphin Watching</h3>
+<p>During the tour you may also spot dolphins swimming in the clear waters of the Indian Ocean.</p>
+
+<h3>Return to Hotel</h3>
+<p>After the marine excursion you return to the beach and transfer back to your hotel.</p>
 
 </div>
 
@@ -818,6 +854,17 @@ document.getElementById("lamuPopup").style.display="flex";
 
 function closeLamu(){
 document.getElementById("lamuPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openWatamu(){
+document.getElementById("watamuPopup").style.display="flex";
+}
+
+function closeWatamu(){
+document.getElementById("watamuPopup").style.display="none";
 }
 
 </script>
