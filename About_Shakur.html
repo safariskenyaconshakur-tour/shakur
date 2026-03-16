@@ -1,185 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Shakur</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-            transition: background 0.3s;
-        }
 
-        header {
-            background-color: #00796b;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
+<title>About Shakur | Safari Kenya Con Shakur</title>
 
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+<style>
 
-        .profile-image {
-            display: block;
-            max-width: 250px;
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 20px auto;
-            transition: transform 0.3s;
-        }
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
 
-        .profile-image:hover {
-            transform: scale(1.05);
-        }
+/* HEADER */
 
-        h2 {
-            color: #00796b;
-            text-align: center;
-            margin-top: 40px;
-        }
+header{
+background:#0a4d2c;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
 
-        p {
-            text-align: justify;
-            margin-bottom: 20px;
-        }
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
+nav a:hover{
+color:#f4d03f;
+}
 
-        .service-card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+/* PAGE TITLE */
 
-        .service-card h3 {
-            margin-bottom: 10px;
-            color: #00796b;
-        }
+.page-title{
+text-align:center;
+padding:40px;
+background:#eee;
+}
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-        }
+.page-title h1{
+margin:0;
+}
 
-        .tripadvisor {
-            text-align: center;
-            margin: 30px 0;
-        }
+/* CONTAINER */
 
-        .tripadvisor img {
-            width: 170px;
-            height: auto;
-            margin-top: 10px;
-            transition: transform 0.3s;
-        }
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
 
-        .tripadvisor img:hover {
-            transform: scale(1.1);
-        }
+/* PROFILE IMAGE */
 
-        .social-links {
-            text-align: center;
-            margin: 30px 0;
-        }
+.profile-image{
+display:block;
+margin:auto;
+width:250px;
+border-radius:10px;
+}
 
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #00796b;
-            font-weight: bold;
-            transition: color 0.3s, transform 0.3s;
-        }
+/* TEXT */
 
-        .social-links a:hover {
-            color: #004d40;
-            transform: scale(1.1);
-        }
+.container p{
+line-height:1.7;
+margin-top:15px;
+}
 
-        footer {
-            background-color: #00796b;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
+/* SERVICES GRID */
 
-    </style>
+.services{
+margin-top:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.service-card{
+background:white;
+padding:20px;
+border-radius:6px;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.service-card h3{
+margin-top:0;
+color:#0a4d2c;
+}
+
+/* TRIPADVISOR */
+
+.tripadvisor{
+text-align:center;
+margin-top:40px;
+}
+
+.tripadvisor img{
+width:170px;
+}
+
+/* SOCIAL */
+
+.social-links{
+text-align:center;
+margin-top:30px;
+}
+
+.social-links a{
+margin:0 10px;
+text-decoration:none;
+color:#0a4d2c;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <header>
-        <h1>About Shakur</h1>
-        <div id="google_translate_element"></div>
-    </header>
+<header>
 
-    <div class="container">
-        <img src="images/photo15.jpg" alt="Shakur" class="profile-image">
+<h2>Safari Kenya Con Shakur</h2>
 
-        <h2>Who is Shakur?</h2>
-        <p>
-            Shakur is a visionary and passionate individual dedicated to providing top-quality safari experiences in Kenya. With years of experience in tourism and wildlife adventures, Shakur has become a trusted name for travelers seeking authentic and memorable journeys.
-        </p>
-        <p>
-            His mission is to connect visitors with the natural beauty of Kenya, sharing stories of wildlife, culture, and conservation. Shakur believes in sustainable tourism and strives to create adventures that leave a positive impact on local communities and the environment.
-        </p>
+<div id="google_translate_element"></div>
 
-        <h2>Safari Services</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Wildlife Safaris</h3>
-                <p>Experience Kenya's rich wildlife, from lions to elephants, with expert guides ensuring safe and unforgettable adventures.</p>
-            </div>
-            <div class="service-card">
-                <h3>Beach Getaways</h3>
-                <p>Relax on Kenya's pristine beaches, enjoy water sports, and discover local coastal culture and cuisine.</p>
-            </div>
-            <div class="service-card">
-                <h3>Cultural Tours</h3>
-                <p>Explore local communities, learn traditional crafts, and experience the authentic lifestyle of Kenya's diverse cultures.</p>
-            </div>
-        </div>
+<nav>
 
-        <div class="tripadvisor">
-            <a href="https://www.tripadvisor.com/Attraction_Review-g661279-d25438699-Reviews-Safari_Kenya_Con_Shakur-Watamu_Coast_Province.html" target="_blank">
-                <img src="images/Tripadvisor_lockup_horizontal_secondary_registered-1.png" alt="TripAdvisor Badge">
-            </a>
-        </div>
+<a href="index.html">Home</a>
+<a href="safari-packages.html">Safari Packages</a>
+<a href="watamu-excursions.html">Watamu Excursions</a>
+<a href="gallery.html">Safari Gallery</a>
+<a href="About_Shakur.html">About Shakur</a>
+<a href="contact.html">Contact</a>
 
-        <div class="social-links">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-            <a href="https://wa.me/254700000000" target="_blank">WhatsApp</a>
-        </div>
+</nav>
 
-    </div>
+</header>
 
-    <footer>
-        &copy; 2026 Shakur Safaris. All Rights Reserved.
-    </footer>
+<section class="page-title">
+
+<h1>About Shakur</h1>
+<p>Your trusted safari guide in Kenya</p>
+
+</section>
+
+<div class="container">
+
+<img src="images/photo15.jpg" class="profile-image" alt="Shakur">
+
+<h2>Who is Shakur?</h2>
+
+<p>
+Shakur is a passionate safari guide and tourism professional based in Kenya.
+With many years of experience guiding visitors across the country, he has built
+a reputation for offering authentic wildlife safaris and unforgettable travel experiences.
+</p>
+
+<p>
+Through Safari Kenya Con Shakur, he helps travelers discover the beauty of Kenya —
+from the wildlife of the savannah to the stunning beaches of the Indian Ocean.
+His goal is to provide safe, memorable and personalized safari adventures.
+</p>
+
+<h2>Safari Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<h3>Wildlife Safaris</h3>
+<p>Explore Kenya's famous national parks and see lions, elephants, giraffes and the Big Five.</p>
+</div>
+
+<div class="service-card">
+<h3>Beach Excursions</h3>
+<p>Enjoy relaxing trips along the beautiful Kenya coast including Watamu and Malindi.</p>
+</div>
+
+<div class="service-card">
+<h3>Cultural Tours</h3>
+<p>Discover local communities, traditions and authentic Swahili culture.</p>
+</div>
+
+</div>
+
+<div class="tripadvisor">
+
+<a href="https://www.tripadvisor.com/Attraction_Review-g661279-d25438699-Reviews-Safari_Kenya_Con_Shakur-Watamu_Coast_Province.html" target="_blank">
+
+<img src="images/Tripadvisor_lockup_horizontal_secondary_registered-1.png">
+
+</a>
+
+</div>
+
+<div class="social-links">
+
+<a href="https://facebook.com">Facebook</a>
+<a href="https://instagram.com">Instagram</a>
+<a href="https://twitter.com">Twitter</a>
+<a href="https://wa.me/254711525101">WhatsApp</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Safari Kenya Con Shakur</p>
+<p>Watamu, Kenya</p>
+<p>Phone / WhatsApp: 0711 525 101</p>
+
+</footer>
 
 </body>
 </html>
