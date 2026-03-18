@@ -422,14 +422,38 @@ font-weight:bold;
 nav a:hover{
 color:#f4d03f;
 }
- 
+ .logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo-area img{
+height:45px;        /* controls size */
+width:auto;
+object-fit:contain;
+border-radius:5px;  /* smooth edges */
+}
+
+.logo-area h2{
+margin:0;
+font-size:20px;
+}
+  .logo-area img{
+image-rendering: -webkit-optimize-contrast;
+}
 </style>
 </head>
   
 <body>
 <header>
+<div class="logo-area">
+<img src="images/logo.png" alt="Safari Kenya Logo">
 <h2>Safari Kenya Con Shakur</h2>
-<div id="google_translate_element"></div>
+</div>
+
+<div id="google_translate_element"></div></h2>
+  
 <nav>
 <a href="index.html">Home</a>
 <a href="safari-packages.html">Safari Packages</a>
