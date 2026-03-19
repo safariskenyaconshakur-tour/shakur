@@ -17,10 +17,11 @@ background:#f5f5f5;
 header{
 background:#0a4d2c;
 color:white;
-padding:15px;
+padding:10px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+flex-wrap:wrap;
 }
 
 header h1{
@@ -30,13 +31,23 @@ font-size:22px;
 
 /* Navigation */
 
+nav{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+}
+
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:15px;
 font-weight:bold;
+font-size:15px;
 }
 
+nav a:hover{
+color:#f4d03f;
+}
 /* Hero */
 .hero{
 background:url("images/safari1.jpg") center/cover;
@@ -102,13 +113,6 @@ color:white;
 text-align:center;
 padding:20px;
 }
-    .slideshow{
-position:relative;
-width:100%;
-height:700px;
-overflow:hidden;
-}
-
 .slide{
 position:absolute;
 width:100%;
@@ -393,26 +397,7 @@ background:rgba(0,0,0,0.5);
 padding:15px;
 font-size:24px;
 }
-header{
-background:#0a4d2c;
-color:white;
-padding:15px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#f4d03f;
-}
   .logo-area{
 display:flex;
 align-items:center;
@@ -420,7 +405,7 @@ gap:15px;
 }
 
 .logo-area img{
-height:70px;        /* controls size */
+height:85px;        /* controls size */
 width:auto;
 object-fit:contain;
 border-radius:5px;  /* smooth edges */
@@ -428,7 +413,7 @@ border-radius:5px;  /* smooth edges */
 
 .logo-area h2{
 margin:0;
-font-size:22px;
+font-size:20px;
 }
   .logo-area img{
 image-rendering: -webkit-optimize-contrast;
