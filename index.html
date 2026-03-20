@@ -418,14 +418,28 @@ font-size:20px;
   .logo-area img{
 image-rendering: -webkit-optimize-contrast;
 }
-.fb-float{
+
+  .fb-toggle{
 position:fixed;
 bottom:20px;
-left:20px;
+right:20px;
+background:#1877f2;
+color:white;
+padding:12px;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+z-index:1000;
+}
+
+#fbBox{
+display:none;
+position:fixed;
+bottom:80px;
+right:20px;
 z-index:999;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
-border-radius:10px;
-overflow:hidden;
+}
 }
 </style>
 </head>
@@ -1086,17 +1100,26 @@ function closeKenyaWildlife(){
 document.getElementById("kenyaWildlifePopup").style.display="none";
 }
 </script>
-<div class="fb-float">
+<script>
+function toggleFB(){
+var box = document.getElementById("fbBox");
+box.style.display = (box.style.display === "block") ? "none" : "block";
+}
+</script>
+
+
+  
+<div class="fb-toggle" onclick="toggleFB()">📘</div>
+<div class="fb-float" id="fbBox">
 <iframe 
-src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/shakue.lali&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"
+src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/shakue.lali&tabs=timeline&width=300&height=400"
 width="300" 
-height="400" 
-style="border:none;overflow:hidden" 
-scrolling="no" 
-frameborder="0" 
-allowfullscreen="true">
+height="400">
 </iframe>
+
 </div>
+
+  
   
 </body>
 </html>
