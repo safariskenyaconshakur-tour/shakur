@@ -56,33 +56,46 @@ font-weight:bold;
 nav a:hover{
 color:#f4d03f;
 }
+  
+  .logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:85px;        /* controls size */
+width:auto;
+object-fit:contain;
+border-radius:5px;  /* smooth edges */
+}
+
+.logo-area h2{
+margin:0;
+font-size:20px;
+}
+  .logo-area img{
+image-rendering: -webkit-optimize-contrast;
+}
+
 </style>
 
 </head>
 
 <body>
 <header>
-
-<h2>Safari Kenya Con Shakur</h2>
-
-<div id="google_translate_element"></div>
-
+<div class="logo-area">
+<img src="images/logo.png" alt="Safari Kenya Logo">
+</div>
+ <div id="google_translate_element"></div>
 <nav>
-
 <a href="index.html">Home</a>
-
-<a href="safari-packages.html">Safari Packages</a>
-
-<a href="watamu-excursions.html">Watamu Excursions</a>
-
-<a href="gallery.html">Safari Gallery</a>
-
-<a href="About_Shakur.html">About Shakur</a>
-
+<a href="safari-packages.html">Packages</a>
+<a href="watamu-excursions.html">Excursions</a>
+<a href="gallery.html">Gallery</a>
+<a href="About_Shakur.html">About US</a>
 <a href="contact.html">Contact</a>
-
 </nav>
-
 </header>
 <div class="hero">
 Amboseli Safari
