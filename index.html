@@ -418,7 +418,15 @@ font-size:20px;
   .logo-area img{
 image-rendering: -webkit-optimize-contrast;
 }
-
+.fb-float{
+position:fixed;
+bottom:20px;
+right:20px;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+border-radius:10px;
+overflow:hidden;
+}
 </style>
 </head>
   
@@ -1078,7 +1086,17 @@ function closeKenyaWildlife(){
 document.getElementById("kenyaWildlifePopup").style.display="none";
 }
 </script>
-
+<div class="fb-float">
+<iframe 
+src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/YOUR_PAGE_NAME&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true"
+width="300" 
+height="400" 
+style="border:none;overflow:hidden" 
+scrolling="no" 
+frameborder="0" 
+allowfullscreen="true">
+</iframe>
+</div>
   
 </body>
 </html>
